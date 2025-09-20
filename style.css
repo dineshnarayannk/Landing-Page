@@ -14,7 +14,7 @@ nav{
 }
 .ttt
 {
-     background-color: rgba(0, 0, 0, 0.363);
+    background-color: rgba(0, 0, 0, 0.363);
     color: white;
     padding: 15px;
     position: fixed;
@@ -32,11 +32,17 @@ li{
 }
 a{
     text-decoration: none;
-    color: black ;
+    color: beige ;
     font-size: larger;
+    transition: 0.3s;
 }
 a:hover{
     color: white;
+    box-shadow: 0 0 20px aqua;
+    text-shadow: 0 0 50px aqua;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: aqua;
 }
 .name{
     text-align: center;
@@ -95,13 +101,12 @@ button:hover{
     display: flex;
     align-items: flex-start;
     gap: 20px;
-    margin: 20px
+    margin: 20px;
 }
 .image-content{
     max-width: 1000px;
     color: black;
     font-size: 1rem;
-
 }
 .home-end{
     text-align: center;
@@ -168,7 +173,7 @@ input,select{
 /*  Place Page style sheets starts */
 
 .place{
-    background-color: bisque;
+    background: linear-gradient(to right,rgb(45, 45, 141),aqua);
 }
 .place-content{
     display: inline-block;
@@ -177,12 +182,19 @@ input,select{
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 50px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 1.5s;
 }
 .place-list{
     text-align: left;
     padding: 50px 20px;
     height: 25%;
-    
+}
+.place-content:hover{
+    height: 30%;
+    width: 30%;
+    box-shadow: 0 0 50px black;
 }
 
 /* About Us style sheets starts */
